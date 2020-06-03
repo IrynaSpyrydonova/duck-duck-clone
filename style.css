@@ -1,0 +1,48 @@
+/* Styling showcase */
+
+.showcase {
+  background-color: #e37151;
+  max-height: fit-content;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("ProximaNova.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.showcase-text {
+  font-family: "Proxima Nova", Fallback, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px;
+}
+
+.showcase-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.showcase-text p {
+  font-size: 18px;
+  padding: 5px;
+  line-height: 1.4;
+}
+
+
+
+/* Adding image to showcase */
+
+.showcase img {
+  margin: 0;
+  padding: 0;
+  width: 55%;
+}
