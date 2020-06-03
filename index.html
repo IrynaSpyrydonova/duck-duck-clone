@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title></title>
+    <title>DuckDuckGo</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/1f1918c2d9.js" crossorigin="anonymous"></script>
 
     <!-- Leave this here!  It renders the review buttons  -->
     <script src="./evaluation/init.js"></script>
   </head>
 
   <body>
-    
+      <!-- Header -->
+  <header>
+    <div id="navigation">
+      <ul>
+        <li><a href="#" tabindex="1"><i class="fas fa-bullhorn"></i></a>
+          <ul class="child-menu"> 
+            <li><a href="https://twitter.com/duckduckgo"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="https://www.reddit.com/r/duckduckgo"><i class="fab fa-reddit"></i><span>Reddit</span></a></li>
+            <li><a href="https://spreadprivacy.com/"><i class="fas fa-comment"></i><span role="link">Blog</span></a></li>
+            <li><a href="https://duckduckgo.com/newsletter"><i class="fas fa-envelope"></i><span>Newsletter</span></a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Slide menu -->
+
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+    <div class="sidebar">
+      <div class="side-header"></div>
+        <ul>
+          <li class="title">Settings</li>
+          <li><a href="https://duckduckgo.com/settings#theme">Theme</a>
+          <li><a href="https://duckduckgo.com/settings">Other Settings</a>
+          <li><a href="https://duckduckgo.com/bang">!Bang Search Shortcuts</a>
+          <li class="title">Privacy Essentials</li>
+          <li><a href="https://duckduckgo.com/">Private Search</a>
+          <li><a href="https://duckduckgo.com/app">App and Extension</a>
+          <li class="title">Why Privacy</li>
+          <li><a href="https://spreadprivacy.com/">Private Blog</a>
+          <li><a href="https://duckduckgo.com/newsletter">Privacy Crash Course</a>
+          <li><a href="https://duckduckgo.com/spread">Help Spread Privacy</a>
+          <li class="title">Who We Are</li>
+          <li><a href="https://duckduckgo.com/about">About Us</a>
+          <li><a href="https://duckduckgo.com/privacy">Privacy Policy</a>
+          <li><a href="https://duckduckgo.com/hiring/">Careers</a>
+          <li><a href="https://duckduckgo.com/press">Press Kit</a> 
+          <li class="title">Keep in Touch</li>
+          <li><a href="https://twitter.com/duckduckgo">Twitter</a>
+          <li><a href="https://www.reddit.com/r/duckduckgo/">Reddit</a>
+          <li><a href="https://help.duckduckgo.com/">Help</a>
+      </ul>
+    </div>
+  </header>
+
       <!-- Logo DuckDuckGo -->
-    <section class="first_part">
+  <section class="first_part">
       <div class="logo">
         <img src="img/logo_homepage.normal.v108.svg" alt="duckduckgo_logo" />
       </div>
@@ -33,9 +81,10 @@
           </button>
         </form>
       </div>
-    </section>
+  </section>
   
-    <section class="showcase">
+  <!-- Showcase -->
+  <section class="showcase">
       <div class="showcase-text">
         <h2>
           We don’t store your<br />
@@ -51,6 +100,7 @@
         src="./img/1-monster-v2--pre-animation.svg"
         alt="Personal information destroyed"
       />
-      
+  </section>
+
   </body>
 </html>
