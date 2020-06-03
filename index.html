@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Leave this here!  It renders the review buttons  -->
+    <script src="./evaluation/init.js"></script>
+  </head>
 
-
-  <!-- Leave this here!  It renders the review buttons  -->
-  <script src='./evaluation/init.js'></script>
-</head>
-
-<body>
-  <!-- Logo DuckDuckGo -->
-  <section class="first_part">
-    <div class="logo">
-      <img src="/img/logo_homepage.normal.v108.svg" alt="duckduckgo_logo" />
-    </div>
-</section>
-</body>
-
+  <body>
+    <!-- Logo DuckDuckGo -->
+    <section class="first_part">
+      <div class="logo">
+        <img src="/img/logo_homepage.normal.v108.svg" alt="duckduckgo_logo" />
+      </div>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <form method="GET" action="https://www.google.com/search">
+          <input
+            type="text"
+            placeholder="Search the web without being tracked"
+            name="q"
+          />
+          <button class="search_button" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
