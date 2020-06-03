@@ -1,4 +1,3 @@
-
 /* Logo */
 .first_part {
   width: 100%;
@@ -45,7 +44,6 @@
 }
 .search-container input:focus {
   outline: none;
-
 }
 .search-container button {
   float: right;
@@ -68,11 +66,10 @@
 }
 
 .search_button .fa-search {
-height: 22px;
-width: 22px;
-text-align: center;
+  height: 22px;
+  width: 22px;
+  text-align: center;
 }
-
 
 /* Styling showcase */
 
@@ -112,8 +109,24 @@ text-align: center;
   padding: 5px;
   line-height: 1.4;
 }
+/* Styling button */
 
+.showcase-text button {
+  cursor: pointer;
+  outline: none;
+  height: 42px;
+  width: 265px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 15px 0;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+.showcase-text button:hover {
+  background: #713828;
+}
 
 /* Adding image to showcase */
 
@@ -122,4 +135,3 @@ text-align: center;
   padding: 0;
   width: 55%;
 }
-
