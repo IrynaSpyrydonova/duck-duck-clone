@@ -114,8 +114,8 @@ body {
 .sidebar{
   position: fixed;
   top: 0;
-  right: -250px;
-  width: 250px;
+  right: -220px;
+  width: 220px;
   height: 100%;
   background: white;
   transition: all .5s ease;
@@ -201,7 +201,7 @@ label #btn:hover{
 }
 label #cancel{
   z-index: 1111;
-  right: -250px;
+  right: -220px;
   top: 17px;
   font-size: 20px;
   color:#888;
@@ -214,7 +214,7 @@ label #cancel{
   right: 0;
 }
 #check:checked ~ label #btn{
-  right: 250px;
+  right: 220px;
   opacity: 0;
   pointer-events: none;
 }
@@ -222,8 +222,8 @@ label #cancel{
   right: 15px;
 }
 #check:checked ~ section{
-  margin-left: 250px;
-  -webkit-margin-start:250px;
+  margin-left: 220px;
+  -webkit-margin-start:220px;
 }
 
 /* Logo */
@@ -256,7 +256,7 @@ label #cancel{
 
 .search-container input {
   width: 550px;
-  height: 40px;
+  height: 42px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -541,7 +541,7 @@ section.content .content .info-item p{
 .fire-wrapper {
   position: absolute;
   width: 120px;  
-  bottom:30px;
+  bottom:25px;
   left: 52%;
   transform: translate(-50%, -50%);
   transform-origin: 50% 100%;
@@ -597,6 +597,33 @@ section.content .content .info-item p{
 
 
 @media (max-width: 860px){
+
+  .search-container input {
+    width: 350px;
+  
+  }
+  .search-container button{
+    width: 40px;
+    height: 42px;
+  }
+
+  section.title h1{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  section.title p {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+
+  section.title .title ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 190px;
+  }
 
   section.content {
       min-height: 750px;
