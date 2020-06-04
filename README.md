@@ -7,8 +7,8 @@ Moreover, in the [development strategy](https://github.com/IrynaSpyrydonova/duck
 
 Well, there is nothing else to say, but to pay _credits_ and _honour_ to
 
-* [Iryna](https://github.com/IrynaSpyrydonova) for excellent execution of the header part and not only: check more [here](https://github.com/IrynaSpyrydonova/duck-duck-clone/projects/1)🌟
-* [Julia](https://github.com/julia-sod) for impecable realisation of showcase and excellence in the [development strategy](https://github.com/IrynaSpyrydonova/duck-duck-clone/blob/master/development-strategy.md)⭐
+* [Iryna](https://github.com/IrynaSpyrydonova) for excellent execution of the header part, drafting [wireframe](https://github.com/IrynaSpyrydonova/duck-duck-clone/blob/master/Wireframe.png) and **not only**: check more [here](https://github.com/IrynaSpyrydonova/duck-duck-clone/projects/1)🌟
+* [Julia](https://github.com/julia-sod) for impecable realisation of showcase, excellence in the [development strategy](https://github.com/IrynaSpyrydonova/duck-duck-clone/blob/master/development-strategy.md) and, again, **not only** that: check more [here](https://github.com/IrynaSpyrydonova/duck-duck-clone/projects/1)⭐
 * [Yauheniya](https://github.com/yauheniya-askolkava) for hanging around 🐼
 
 Well, enjoy our [DuckDuckGo](https://irynaspyrydonova.github.io/duck-duck-clone/)!
