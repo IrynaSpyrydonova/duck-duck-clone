@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto&display=swap');
 
 *{
@@ -271,7 +272,6 @@ label #cancel{
 }
 .search-container input:focus {
   outline: none;
-
 }
 .search-container button {
   float: right;
@@ -298,6 +298,7 @@ label #cancel{
   width: 22px;
   text-align: center;
 }
+
 
 /* Title */
 
@@ -467,8 +468,6 @@ section.content .content .info-item p{
   line-height: 24px;
 }
 
-
-
 /* Styling showcase */
 
 .showcase {
@@ -508,7 +507,24 @@ section.content .content .info-item p{
   line-height: 1.4;
 }
 
+/* Styling button */
 
+.showcase-text button {
+  cursor: pointer;
+  outline: none;
+  height: 42px;
+  width: 265px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 15px 0;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.showcase-text button:hover {
+  background: #713828;
+}
 
 /* Adding image to showcase */
 
@@ -517,8 +533,6 @@ section.content .content .info-item p{
   padding: 0;
   width: 55%;
 }
-
-
 
 @media (max-width: 860px){
 
@@ -537,3 +551,4 @@ section.content .content .info-item p{
       min-height: 300px;
       }
 }
+
