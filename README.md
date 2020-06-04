@@ -1,4 +1,4 @@
-## Welcome to the Educational Part of DuckDuckGo Clone!
+## Welcome to the Clone of DuckDuckGo!
 
 This is a reproduction of the website [DuckDuckGo](https://duckduckgo.com/), which is done in the framework of the school [HackYourFutureBelgium](https://github.com/HackYourFutureBelgium/home).
 
