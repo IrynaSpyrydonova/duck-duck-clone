@@ -1,3 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    background: #f7f7f7;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+
+#navigation {
+  position: absolute;
+  right: 100px;
+  top: 27px;
+  background: #f7f7f7;
+}
+
+
+#navigation ul {
+  list-style: none;
+}
+
+#navigation ul li {
+  float: left;
+  padding: 0 10px;
+  position: relative; 
+}
+
+
+#navigation ul li a {
+  color:#888;
+}
+
+#navigation ul li a:hover{
+  color: #636262;
+}
+
+#navigation ul .child-menu a{
+  transition: .5s ease;
+  text-decoration: none;
+  line-height: 27px;
+  font-size: 14px;
+  color:#353748;
+}
+
+#navigation ul .child-menu a:hover{
+  text-decoration: underline;
+  color: #333;
+}
+
+#navigation ul li .fa-twitter {
+  width: 20px;
+  height: 20px;
+  color: #4495d4;
+  padding-right: 10px;
+}
+
+#navigation ul li .fa-reddit {
+  width: 20px;
+  height: 20px;
+  color: #FF4500;
+  padding-right: 10px;
+}
+
+#navigation ul li .fa-comment {
+  width: 20px;
+  height: 20px;
+  color: #6e2cb0;
+  padding-right: 10px;
+}
+#navigation ul li .fa-envelope{
+  width: 20px;
+  height: 20px;
+  color: #f5ab3d;
+  padding-right: 10px;
+}
+
+#navigation ul.child-menu {
+  display: none;
+  position: absolute;
+  top:40px;
+  right:1px;
+  width: 160px;
+  box-sizing: border-box;
+  padding:10px;
+  box-shadow: 0 2.5px 20px 0 rgba(0,0,0,0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;  
+}
+#navigation ul.child-menu li {
+  font-size: 14px;
+  font-family:'Montserrat', sans-serif;
+  line-height: 27px;
+}
+
+#navigation ul a:focus{
+  outline: none;
+}
+
+#navigation ul li a:focus + ul.child-menu,
+#navigation ul li.focus ul.child-menu {
+  display: block;
+}
+
+/* Sidebar */
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  transition: all .5s ease;
+  border-left: 1px solid rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.sidebar .side-header{
+  font-size: 12px;
+  color: #888;
+  line-height: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: white;
+  user-select: none;
+}
+
+.sidebar ul li{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 27px;
+  font-size: 14px;
+  color: #888;
+  padding-left: 27px;
+  box-sizing: border-box;
+  transition: .4s;
+  font-family:'Montserrat', sans-serif ;
+}
+
+.sidebar ul li.title{
+  padding-top:20px;
+}
+
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 27px;
+  font-size: 14px;
+  color: #353748;
+  box-sizing: border-box;
+  transition: .4s;
+  text-decoration: none;
+}
+
+.sidebar ul li:hover a{
+  text-decoration: underline;
+  color: #333;
+}
+
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background:#f7f7f7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #cancel{
+  position: absolute;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+label #btn{
+  right: 20px;
+  top: 25px;
+  font-size: 20px;
+  color: #888;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #btn:hover{
+  color: white;
+  background:#888;
+
+}
+label #cancel{
+  z-index: 1111;
+  right: -250px;
+  top: 17px;
+  font-size: 20px;
+  color:#888;
+  background: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+  right: 0;
+}
+#check:checked ~ label #btn{
+  right: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  right: 15px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+  -webkit-margin-start:250px;
+}
 
 /* Logo */
 .first_part {
@@ -68,9 +294,9 @@
 }
 
 .search_button .fa-search {
-height: 22px;
-width: 22px;
-text-align: center;
+  height: 22px;
+  width: 22px;
+  text-align: center;
 }
 
 /* Title */
