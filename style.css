@@ -438,6 +438,7 @@ section.content .content .info-item p{
 /* Styling showcase */
 
 .showcase {
+  position: relative;
   background-color: #e37151;
   max-height: fit-content;
   height: 650px;
@@ -484,6 +485,63 @@ section.content .content .info-item p{
   width: 55%;
 }
 
+/* Monster fire */
+
+.fire-wrapper {
+  position: absolute;
+  width: 120px;  
+  bottom:30px;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 100%;
+  animation: fireUp 1s ease-in infinite;
+  z-index: 1;
+}
+
+.fire {
+  padding-top: 120%;
+  width: 100%;
+  height: 100%;
+  background: url(img/fire.png) no-repeat;
+  background-size: contain;
+  animation: fire 1s ease-out infinite;
+}
+
+@keyframes fireUp {
+  0% {
+      bottom: -20px;
+  }
+
+  20% {
+      bottom: 60px;
+  }
+
+  100% {
+      bottom: 160px;
+  }
+}
+
+@keyframes fire {
+  0% {
+      transform: scale(0, 0);
+      opacity: 0.8;
+  }
+
+  20% {
+      transform: scale(0, 0);
+      opacity: 0.8;
+  }
+
+  50% {
+      opacity: 0.8;
+  }
+
+  100% {
+      transform: scale(1, 1);
+      opacity: 0;
+  }
+}
+
 
 
 @media (max-width: 860px){
@@ -502,4 +560,25 @@ section.content .content .info-item p{
       width: 300px;
       min-height: 300px;
       }
+
+  .fire-wrapper {
+      width: 40px;
+      bottom: 6px;
+  }
+
+  @keyframes fireUp {
+    0% {
+        bottom: -4px;
+        }
+      
+    20% {
+        bottom: 20px;
+        }
+      
+    100% {
+        bottom: 60px;
+
+        }
+      }
 }
+
